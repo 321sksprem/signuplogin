@@ -25,12 +25,14 @@
       <form #register="ngForm" >
         <label for="chk" aria-hidden="true">Login</label>
 
-        <input type="text"  required="" name="email" placeholder="email" #userName="ngModel" [(ngModel)]="loginObj.email" >
+        <input type="text"  required=""   name="email" placeholder="email" #userName="ngModel" [(ngModel)]="loginObj.email" >
+
+      
+
+        <input type="password"   required=""    name="password" placeholder="Password" #password="ngModel" [(ngModel)]="loginObj.password">
 
 
-        <input type="password"   required=""  name="password" placeholder="Password" #password="ngModel" [(ngModel)]="loginObj.password">
-
-        <button   (click)="onLogin()">Login</button>
+        <button  (click)="onLogin()">Login</button>
       </form>
     </div>
 </div>
